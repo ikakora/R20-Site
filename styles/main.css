@@ -8,6 +8,7 @@
 .section__content {
     width: 1200px;
     display: flex;
+    align-items: flex-start;
 }
 
 /* Typography */
@@ -16,6 +17,14 @@ html {
     font-family: Inter, sans-serif;
     font-size: 18px;
     color: #7E7E7E;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Mulish', sans-serif;
 }
 
 /* Header */
@@ -43,23 +52,19 @@ html {
 .header-logo .section__content {
     justify-content: space-between;
 }
-
 .header-logo__image {
-    /*width: 240px;*/
     color: #1C2752;
     font-family: 'Mulish', sans-serif;
     font-size: 35px;
     font-weight: 800;
 }
-
 .header-logo__image>img {
     width: 68px;
     height: 68px;
 }
-
-.header-logo__image span img {
-    width: 35px;
-    height: 35px;
+.header-logo__text img {
+    width: 20px;
+    height: 20px;
 }
 
 /* Contacts */
@@ -95,4 +100,88 @@ html {
 .contact__text {
     text-decoration: none;
     color: #7E7E7E;
+}
+
+/* Navigation */
+
+.navigation {
+    background-color: #FFB342;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+}
+.navigation__menu {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    padding: 20px 0;
+    margin: 0;
+}
+.navigation__menu-item a {
+    color: #2F2F2F;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.navigation__dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFB342;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.navigation__dropdown:hover .navigation__dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+.navigation__cta {
+    padding: 20px 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+    background: #1C2752;
+}
+
+/* Navigation */
+
+.nav-section {
+    position: relative;
+    top: 66px;
+    margin-top: -66px;
+}
+
+/* Hero */
+
+.hero {
+    background-image: url("../media/hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 924px;
+}
+.hero .section__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero__heading {
+    font-size: 60px;
+    font-weight: 800;
+    width: 50%;
+    color: #FFFFFF;
+}
+.hero__cta {
+    background: #FFB342;
+    color: #1C2752;
+    font-weight: 600;
+    padding: 20px 33px;
+    text-decoration: none;
+}
+
+/* Icon Label */
+
+.icon-label {
+    padding: 12px 16px 12px 52px;
+    font-weight: 500;
+    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.2) url("../icons/note.svg") 16px no-repeat;
 }
