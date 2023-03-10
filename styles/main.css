@@ -46,7 +46,7 @@ html {
 }
 
 .header-logo__image {
-    width: 240px;
+    /*width: 240px;*/
     color: #1C2752;
     font-family: 'Mulish', sans-serif;
     font-size: 35px;
