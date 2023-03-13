@@ -27,6 +27,21 @@ h6 {
     font-family: 'Mulish', sans-serif;
 }
 
+/* Paragraph */
+
+.paragraph__label {
+    background: #F4F4F4 url("../icons/o_20x20.png") 16px no-repeat;
+    color: #1C2752;
+    align-self: flex-start;
+    padding: 12px 16px 12px 52px;
+    font-weight: 500;
+}
+.paragraph__heading {
+    color: #1C2752;
+    font-size: 45px;
+    font-weight: 800;
+}
+
 /* Header */
 
 .header-line {
@@ -159,6 +174,10 @@ h6 {
     flex-direction: column;
     justify-content: center;
 }
+.hero__label {
+    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.2) url("../icons/gear.svg") 16px no-repeat;
+}
 .hero__heading {
     font-size: 60px;
     font-weight: 800;
@@ -172,16 +191,6 @@ h6 {
     padding: 20px 33px;
     text-decoration: none;
 }
-
-/* Icon Label */
-
-.icon-label {
-    padding: 12px 16px 12px 52px;
-    font-weight: 500;
-    color: #FFFFFF;
-    background: rgba(255, 255, 255, 0.2) url("../icons/note.svg") 16px no-repeat;
-}
-
 /* About Us */
 
 .about-us {
@@ -198,19 +207,6 @@ h6 {
     flex-direction: column;
     max-width: 600px;
     width: 100%;
-}
-.about-us__label {
-    background: #F4F4F4 url("../icons/o_20x20.png") 16px no-repeat;
-    color: #1C2752;
-    align-self: flex-start;
-}
-.about-us__heading {
-    color: #1C2752;
-    font-size: 45px;
-    font-weight: 800;
-}
-.about-us__text {
-    text-decoration: underline;
 }
 .about-us__experience {
     display: flex;
