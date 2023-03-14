@@ -319,9 +319,10 @@ h6 {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    box-sizing: border-box;
     flex-wrap: wrap;
     background-color: #FFFFFF;
-    height: 509px;
+    height: 516px;
     padding: 66px 59px;
 }
 .services__paragraph {
@@ -464,4 +465,36 @@ h6 {
 }
 .why-us__reasons-bullet .paragraph__text {
     margin: 5px 0 40px 0;
+}
+.gallery {
+    background-color: #1C2752;
+    flex-direction: column;
+    align-items: center;
+    padding: 169px 27px;
+}
+.gallery__label {
+    align-self: unset;
+}
+.gallery__heading {
+    color: #FFFFFF;
+    margin: 9px 0 60px 0;
+}
+.gallery__photos {
+    display: flex;
+    gap: 30px;
+}
+.gallery__photo {
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    padding: 21px 22px;
+    text-align: center;
+}
+.gallery__image {
+    width: 400px;
+    height: 501px;
+}
+.gallery__photo-heading {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 23px 0 7px 0;
 }
