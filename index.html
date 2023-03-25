@@ -3,13 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="KoRa">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/normalize.css" />
         <link rel="stylesheet" href="styles/main.css" />
         <link rel="icon" href="icons/favicon.svg" />
-        <title>Vinyl Store</title>
+        <title>Record Store</title>
     </head>
     <body>
         <header>
@@ -24,9 +25,9 @@
                     </div>
                 </div>
             </div>
-            <div class="section header-logo">
+            <div class="section header-info">
                 <div class="section__content">
-                    <div class="header-logo__image">
+                    <div class="brand-logo">
                         <span>Record St<img src="icons/o_20x20.png" alt="Record Store Logo" title="Record Store" />re</span>
                     </div>
                     <div class="contacts">
@@ -36,7 +37,7 @@
                             </div>
                             <div class="contacts__info">
                                 <span class="contact__title">Mail Us</span>
-                                <a href="mailto:info@recordstore.com" class="contact__text">info@records.com</a>
+                                <a href="mailto:info@recordstore.com">info@records.com</a>
                             </div>
                         </div>
                         <div class="contacts__contact">
@@ -45,7 +46,7 @@
                             </div>
                             <div class="contacts__info">
                                 <span class="contact__title">Call Us</span>
-                                <a href="tel:+995599123456" class="contact__text">+995 599 12 34 56</a>
+                                <a href="tel:+995599123456">+995 599 12 34 56</a>
                             </div>
                         </div>
                     </div>
@@ -53,55 +54,58 @@
             </div>
         </header>
 
-        <div class="section nav-section">
-            <nav class="navigation section__content">
+        <section class="section nav-section">
+            <nav class="section__content navigation">
                 <ul class="navigation__menu">
-                    <li class="navigation__menu-item">
-                        <a href="#home">HOME</a>
+                    <li>
+                        <a class="button" href="#">HOME</a>
                     </li>
-                    <li class="navigation__menu-item">
-                        <a href="#about-us">About Us</a>
+                    <li>
+                        <a class="button" href="#about-us">About Us</a>
                     </li>
-                    <li class="navigation__menu-item navigation__dropdown">
-                        <a href="#pages">Pages<img src="icons/dropdown.svg" alt="Down arrow" /></a>
+                    <li class="navigation__dropdown">
+                        <a class="button" href="#">Pages<img src="icons/dropdown.svg" alt="Down arrow" /></a>
                         <div class="navigation__dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <a class="button" href="#our-label">Our Label</a>
+                            <a class="button" href="#">Link 2</a>
+                            <a class="button" href="#">Link 3</a>
                         </div>
                     </li>
-                    <li class="navigation__menu-item">
-                        <a href="#services">Services</a>
+                    <li>
+                        <a class="button" href="#music">Music</a>
                     </li>
-                    <li class="navigation__menu-item">
-                        <a href="#blog">Blog</a>
+                    <li>
+                        <a class="button" href="#">Blog</a>
                     </li>
-                    <li class="navigation__menu-item">
-                        <a href="#contactus">Contact Us</a>
+                    <li>
+                        <a class="button" href="#">Contact Us</a>
                     </li>
                 </ul>
                 <a class="navigation__cta" href="#">Have Any Questions?</a>
             </nav>
-        </div>
+        </section>
+
         <section class="section hero">
             <div class="section__content">
-                <span class="hero__label icon-label">We Provide Electric Services For Industrial Project</span>
-                <h1 class="hero__heading">We Are Professional Quality Services</h1>
-                <a class="button hero__cta" href="#">Our Services</a>
+                <span class="icon-label hero__label">We Have The Largest Vinyl Collection</span>
+                <h1 class="hero__heading">We Are The Largest Record Store</h1>
+                <a class="button hero__button" href="#our-label">Our Label</a>
             </div>
         </section>
 
         <section id="about-us" class="section about-us">
             <div class="section__content">
+                <img src="media/about-us.jpg" width="540" alt="Girl Digging Vinyls" />
                 <div class="about-us__items">
                     <span class="icon-label about-us__label">Welcome To Record Store</span>
-                    <h2 class="global-heading">We Provide Your Future</h2>
-                    <p class="global-text">Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada.</p>
-                    <p class="global-text">In pulvinar viverra diam, nec rutrum mauris maximus non. Aenean sed quam tristique, facilisis est ac, interdum velit.</p>
+                    <h2>Find Any Music Here</h2>
+                    <p>Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada.</p>
+                    <p>In pulvinar viverra diam, nec rutrum mauris maximus non. Aenean sed quam tristique, facilisis est ac, interdum velit.</p>
                     <div class="about-us__experience">
-                        <div class="about-us__calendar">
+                        <div class="experience-label">
                             <div>
-                                <h5 class="about-us__calendar-heading global-heading">Years Of Experience</h5>
+                                <span>55</span>
+                                <span>Years In Business</span>
                             </div>
                         </div>
                         <ul class="about-us__points">
@@ -115,36 +119,36 @@
             </div>
         </section>
 
-        <section id="services" class="section services">
+        <section id="music" class="section music">
             <div class="section__content">
-                <div class="services__selector">
-                    <h2 class="services__heading">Professional Main Services</h2>
-                    <p class="services__text">Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt.</p>
-                    <div class="services__buttons">
-                        <a class="services__button button button--active services__button--active"><img src="icons/commercial.svg" alt="Buildings">Commercial</a>
-                        <a class="services__button button"><img src="icons/residential.svg" alt="Home Gear">Residential</a>
-                        <a class="services__button button"><img src="icons/industrial.svg" alt="Factory Icon">Industrial</a>
+                <div class="music__genres">
+                    <h2 class="music__heading">Find Music You Love</h2>
+                    <p class="music__paragraph">Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt.</p>
+                    <div class="music__buttons">
+                        <a class="button button--active music__button"><img src="icons/genre.svg" alt="Headphones & Turntable">House</a>
+                        <a class="button music__button"><img src="icons/genre.svg" alt="Headphones & Turntable">Disco</a>
+                        <a class="button music__button"><img src="icons/genre.svg" alt="Headphones & Turntable">Techno</a>
                     </div>
                 </div>
-                <div class="services__selected--active">
-                    <div class="services__paragraph">
-                        <span class="icon-label">Based on Commercial</span>
-                        <h2 class="global-heading">Commercial</h2>
-                        <p class="global-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do incididunt ut labore et dolore magna aliqua. Ut enim ad minimquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <p class="global-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="music__genre--selected">
+                    <div class="music__genre-info">
+                        <span class="icon-label">Rare Vinyls</span>
+                        <h3>House</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do incididunt ut labore et dolore magna aliqua. Ut enim ad minimquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
-                    <a class="button services__read-more">Read More</a>
-                    <img src="media/commercial.png" alt="Factory" />
+                    <a class="button">Read More</a>
+                    <img src="media/house.jpg" alt="Vinyls On Stand" />
                 </div>
             </div>
         </section>
-
-        <section class="our-services section">
+<!-- swap music & our label -->
+        <section id="our-label" class="section our-label">
             <div class="section__content">
-                <div class="our-services__paragraph">
-                    <span class="icon-label">Our Services</span>
-                    <h2 class="global-heading">Our Services</h2>
-                    <p class="global-text">Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt.</p>
+                <div class="our-label__paragraph">
+                    <span class="icon-label">Our Label</span>
+                    <h2>Our Label</h2>
+                    <p>Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt.</p>
                 </div>
                 <div class="our-services__items">
                     <div class="our-services__box">
@@ -186,7 +190,7 @@
             </div>
         </section>
 
-        <section class="why-us section">
+        <section class="section why-us">
             <div class="why-us__achievements-container">
                 <div class="why-us__achievements-list">
                     <div class="why-us__achievement">
@@ -209,56 +213,56 @@
             </div>
             <div class="why-us__reasons">
                 <span class="icon-label">Why Choose Us</span>
-                <h2 class="global-heading">Few Reasons Why You Should Choose Us</h2>
-                <p class="global-text">Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada. </p>
+                <h2>Few Reasons Why You Should Choose Us</h2>
+                <p>Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium metus. Proin pretium id urna sit amet tincidunt. Interdum et malesuada. </p>
                 <div class="why-us__reasons-bullet">
-                    <h4 class="global-heading">35 Years Experiance</h4>
-                    <p class="global-text">Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium</p>
+                    <h4>35 Years Experiance</h4>
+                    <p>Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium</p>
                 </div>
                 <div class="why-us__reasons-bullet">
-                    <h4 class="global-heading">Excellence Certificate</h4>
-                    <p class="global-text">Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium</p>
+                    <h4>Excellence Certificate</h4>
+                    <p>Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium</p>
                 </div>
                 <div class="why-us__reasons-bullet">
-                    <h4 class="global-heading">Affordable Price</h4>
-                    <p class="global-text">Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium</p>
+                    <h4>Affordable Price</h4>
+                    <p>Pellentesque vehicula eros neque, maximus mattis est sagittis Nulla facilisi. In sed pretium</p>
                 </div>
             </div>
         </section>
 
-        <section class="gallery section">
+        <section class="section gallery">
             <div class="gallery__label icon-label">The Gallery</div>
-            <h2 class="gallery__heading global-heading">Check Our Recent Work</h2>
+            <h2 class="gallery__heading">Check Our Recent Work</h2>
             <div class="gallery__photos">
                 <div class="gallery__photo">
                     <img class="gallery__image" src="media/gallery-1.png" alt="Electrician">
-                    <h4 class="gallery__photo-heading global-heading">Electrical & Maintenance</h4>
-                    <p class="global-text">Electric, Installation</p>
+                    <h4 class="gallery__photo-heading">Electrical & Maintenance</h4>
+                    <p>Electric, Installation</p>
                 </div>
                 <div class="gallery__photo">
                     <img class="gallery__image" src="media/gallery-2.png" alt="House Worker" />
-                    <h4 class="gallery__photo-heading global-heading">Interior/Exterior Services</h4>
-                    <p class="global-text">House,  Office </p>
+                    <h4 class="gallery__photo-heading">Interior/Exterior Services</h4>
+                    <p>House,  Office </p>
                 </div>
                 <div class="gallery__photo">
                     <img class="gallery__image" src="media/gallery-3.png" alt="Car Mechanic">
-                    <h4 class="gallery__photo-heading global-heading">Car Repair & Maintenance</h4>
-                    <p class="global-text">Car, Bike, load vehicle</p>
+                    <h4 class="gallery__photo-heading">Car Repair & Maintenance</h4>
+                    <p>Car, Bike, load vehicle</p>
                 </div>
                 <div class="gallery__photo">
                     <img class="gallery__image" src="media/gallery-4.png" alt="Electrician">
-                    <h4 class="gallery__photo-heading global-heading">Electrical installation</h4>
-                    <p class="global-text">Installation</p>
+                    <h4 class="gallery__photo-heading">Electrical installation</h4>
+                    <p>Installation</p>
                 </div>
             </div>
         </section>
 
-        <section class="feedback section">
+        <section class="section feedback">
             <div class="feedback__contents section__content">
                 <div class="feedback__content">
                     <div class="feedback__review">
                         <div class="feedback__review-label icon-label">Testimonial</div>
-                        <h2 class="global-heading">Customers Say</h2>
+                        <h2>Customers Say</h2>
                     </div>
                     <div class="feedback__customer-satisfaction">sad</div>
                 </div>
